@@ -1,0 +1,273 @@
+{
+  "templates":[
+    {
+      "name": "设备运营监控",
+      "actions": [],
+      "interfaces": [],
+      "menus": [
+        {
+          "name": "设备运营监控",
+          "url": "/manageweb/operation-monitor"
+        }
+      ]
+    },
+    {
+      "name": "设备流水监控",
+      "actions": [],
+      "interfaces": [],
+      "menus": [
+        {
+          "name": "设备流水监控",
+          "url": "/manageweb/flow-monitor"
+        }
+      ]
+    },
+    {
+      "name": "设备管理",
+      "actions": [],
+      "interfaces": [],
+      "menus": [
+        {
+          "name": "设备管理",
+          "url": "/manageweb/equip-manage"
+        }
+      ]
+    },
+    {
+      "name": "机构管理",
+      "actions": [
+        {
+          "name": "机构管理-增加",
+          "code": "manage:organization:add"
+        },
+        {
+          "name": "机构管理-修改",
+          "code": "manage:organization:edit"
+        },
+        {
+          "name": "机构管理-删除",
+          "code": "manage:organization:remove"
+        }
+      ],
+      "interfaces": [
+        {
+          "name": "机构管理-查询",
+          "url": "/manageapi/organization/search"
+        },
+        {
+          "name": "机构管理-添加",
+          "url": "/manageapi/organization/add"
+        },
+        {
+          "name": "机构管理-修改",
+          "url": "/manageapi/organization/edit"
+        },
+        {
+          "name": "机构管理-删除",
+          "url": "/manageapi/organization/remove"
+        },
+        {
+          "name": "区域管理-查询",
+          "url": "/manageapi/areacode/search"
+        },
+        {
+          "name": "字典-查询",
+          "url": "/dictionaryapi/get_dict_info"
+        }
+        
+      ],
+      "menus": [
+        {
+          "name": "机构管理",
+          "url": "/manageweb/organization-manage"
+        }
+      ]
+    }, {
+      "name": "区域管理",
+      "actions": [
+        {
+          "name": "区域管理-增加",
+          "code": "manage:areacode:add"
+        },
+        {
+          "name": "区域管理-修改",
+          "code": "manage:areacode:edit"
+        },
+        {
+          "name": "区域管理-删除",
+          "code": "manage:areacode:remove"
+        }
+      ],
+      "interfaces": [
+        {
+          "name": "区域管理-查询",
+          "url": "/manageapi/areacode/search"
+        },
+        {
+          "name": "区域管理-添加",
+          "url": "/manageapi/areacode/add"
+        },
+        {
+          "name": "区域管理-修改",
+          "url": "/manageapi/areacode/edit"
+        },
+        {
+          "name": "区域管理-删除",
+          "url": "/manageapi/areacode/remove"
+        },
+        {
+          "name": "区域管理-ids",
+          "url": "/manageapi/areacode/get_by_ids"
+        },
+        {
+          "name": "字典-查询",
+          "url": "/dictionaryapi/get_dict_info"
+        }
+      ],
+      "menus": [
+        {
+          "name": "区域管理",
+          "url": "/manageweb/areacode-manage"
+        }
+      ]
+    }, {
+      "name": "厂商管理",
+      "actions": [
+        {
+          "name": "厂商管理-增加",
+          "code": "manage:factory:add"
+        },
+        {
+          "name": "厂商管理-修改",
+          "code": "manage:factory:edit"
+        },
+        {
+          "name": "厂商管理-删除",
+          "code": "manage:factory:remove"
+        }
+      ],
+      "interfaces": [
+        {
+          "name": "厂商管理-查询",
+          "url": "/manageapi/factory/search"
+        },
+        {
+          "name": "厂商管理-添加",
+          "url": "/manageapi/factory/add"
+        },
+        {
+          "name": "厂商管理-修改",
+          "url": "/manageapi/factory/edit"
+        },
+        {
+          "name": "厂商管理-删除",
+          "url": "/manageapi/factory/remove"
+        },
+        {
+          "name": "字典-查询",
+          "url": "/dictionaryapi/get_dict_info"
+        }
+      ],
+      "menus": [
+        {
+          "name": "厂商管理",
+          "url": "/manageweb/factory-manage"
+        }
+      ]
+    }, {
+      "name": "后台设备管理",
+      "actions": [
+        {
+          "name": "后台设备管理-增加",
+          "code": "manage:device:add"
+        },
+        {
+          "name": "后台设备管理-修改",
+          "code": "manage:device:edit"
+        },
+        {
+          "name": "后台设备管理-删除",
+          "code": "manage:device:remove"
+        }
+      ],
+      "interfaces": [
+        {
+          "name": "后台设备管理-查询",
+          "url": "/manageapi/device/search"
+        },
+        {
+          "name": "后台设备管理-添加",
+          "url": "/manageapi/device/add"
+        },
+        {
+          "name": "后台设备管理-修改",
+          "url": "/manageapi/device/edit"
+        },
+        {
+          "name": "后台设备管理-删除",
+          "url": "/manageapi/device/remove"
+        },
+        {
+          "name": "后台设备管理-ids",
+          "url": "/manageapi/device/get_by_ids"
+        }, {
+          "name": "地区管理-查询",
+          "url": "/manageapi/areacode/search"
+        },
+        {
+          "name": "机构管理-查询",
+          "url": "/manageapi/organization/search"
+        },
+        {
+          "name": "用户-查询",
+          "url": "/systemapi/get_user_list"
+        },
+        {
+          "name": "设备类型-查询",
+          "url": "/manageapi/devicetype/search"
+        },
+        {
+          "name": "设备型号-查询",
+          "url": "/manageapi/devicemodel/search"
+        },
+        {
+          "name": "字典-查询",
+          "url": "/dictionaryapi/get_dict_info"
+        }        
+      ],
+      "menus": [
+        {
+          "name": "后台设备管理",
+          "url": "/manageweb/device-manage"
+        }
+      ]
+    }         
+  ],
+  "links": [],
+  "dicts": [
+    {
+      "name": "manage_device_direction",
+      "memo": "设备开门方向",
+      "option_type": "number",
+      "options": []
+    },
+    {
+      "name": "manage_organization_type",
+      "memo": "机构级别编号",
+      "option_type": "number",
+      "options": []
+    },
+    {
+      "name": "manage_factory_type",
+      "memo": "厂商类型",
+      "option_type": "number",
+      "options": []
+    },
+    {
+      "name": "manage_contact_type",
+      "memo": "合同类型",
+      "option_type": "number",
+      "options": []
+    }
+  ]
+}
