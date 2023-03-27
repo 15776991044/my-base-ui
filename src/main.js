@@ -8,11 +8,14 @@ import permission from './directive/permission'
 
 import 'normalize.css/normalize.css' // a modern alternative to CSS resets
 
+
+
 import ElementUI from 'element-ui'
 // import 'element-ui/lib/theme-chalk/index.css' // �� index.html ��ͨ�� link ��ǩ������
 Vue.use(ElementUI)
 Vue.use(permission)
-
+import showToast from "@/components/UIMessage/index.js"
+Vue.use(showToast)
 import { deepClone } from '@/utils/index'
 Vue.prototype.$copy = deepClone
 
@@ -36,6 +39,10 @@ Vue.prototype.$getArrItem = getArrItem
 Vue.prototype.$getArrIds = getArrIds
 Vue.prototype.$getArrItems = getArrItems
 Vue.prototype.$initRules = initRules
+
+import UICheckBox from "@/components/UICheckBox"
+Vue.component(UICheckBox.name, UICheckBox);
+
 
 function render(props) {
   let container

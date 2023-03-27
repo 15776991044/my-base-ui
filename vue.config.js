@@ -1,6 +1,9 @@
 const { name } = require('./package')
 const publicPath = '/child/manageweb'
 const targetProxy = '/'
+
+let path = require('path')
+
 // const targetProxy = 'http://face.dev.laningtech.net/'
 module.exports = {
   lintOnSave: false,
@@ -44,7 +47,7 @@ module.exports = {
       'vue-router': 'VueRouter',
       'vuex': 'Vuex',
       'element-ui': 'ELEMENT'
-    }
+    },
   },
   chainWebpack(config) {
     config.module.rule('fonts')
@@ -74,5 +77,11 @@ module.exports = {
           }
         }
       })
+
+    config.module.rule('leaderLine')
+      .test(path.resolve(__dirname, 'node_modules/leader-line'))
+      .use('skeleton-loader')
+      .loader('skeleton-loader')
+      .options({procedure: content => `${content}export default LeaderLine`})
   }
 }
