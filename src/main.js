@@ -42,6 +42,10 @@ Vue.prototype.$initRules = initRules
 
 import UICheckBox from "@/components/UICheckBox"
 Vue.component(UICheckBox.name, UICheckBox);
+import UIDatePicker from "@/components/UIDatePicker"
+Vue.component(UIDatePicker.name, UIDatePicker);
+import UIScrollbar from "@/components/UIScrollbar"
+Vue.component(UIScrollbar.name, UIScrollbar);
 
 
 function render(props) {

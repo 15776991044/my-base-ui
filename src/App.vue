@@ -11,6 +11,10 @@ import Emitter from "@/mixins/emitter"
 export default {
   components: { Menu },
   mixins: [Emitter],
+  data(){
+    return {
+    }
+  },
   computed: {
     navFlag() {
       return !window.__POWERED_BY_QIANKUN__&& process.env.NODE_ENV == 'development'

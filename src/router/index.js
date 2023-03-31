@@ -5,6 +5,8 @@ Vue.use(VueRouter)
 
 import Home from '@/views/home'
 import LeaderLine from '@/views/leader-line'
+import ResizeObserver from '@/views/resize-observer'
+import ThrottleDebounce from '@/views/throttle-debounce'
 
 
 const routes = [
@@ -16,7 +18,16 @@ const routes = [
     path: '/leader-line',
     name: 'LeaderLine',
     component: LeaderLine
-  },
+  }, {
+    path: '/resize-observer',
+    name: 'ResizeObserver',
+    component: ResizeObserver
+  }, {
+    path: '/throttle-debounce',
+    name: 'ThrottleDebounce',
+    component: ThrottleDebounce    
+    
+  }
  
 ]
 
