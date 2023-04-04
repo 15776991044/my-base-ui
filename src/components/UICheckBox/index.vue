@@ -160,6 +160,8 @@ export default {
     }
   },
   created() {
+    console.log('this.$attrs', this.$attrs)
+
     this.checked && this.addToStore();
   },
   mounted() { // 为indeterminate元素 添加aria-controls 属性

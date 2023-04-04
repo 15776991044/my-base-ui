@@ -46,6 +46,8 @@ import UIDatePicker from "@/components/UIDatePicker"
 Vue.component(UIDatePicker.name, UIDatePicker);
 import UIScrollbar from "@/components/UIScrollbar"
 Vue.component(UIScrollbar.name, UIScrollbar);
+import UIImage from "@/components/UIImage"
+Vue.component(UIImage.name, UIImage);
 
 
 function render(props) {

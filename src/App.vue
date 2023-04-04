@@ -13,6 +13,7 @@ export default {
   mixins: [Emitter],
   data(){
     return {
+      a: 2
     }
   },
   computed: {
@@ -21,13 +22,14 @@ export default {
     }
   },
   mounted(){
+    // console.log('this.$options', this.$options)
     // console.log(this)
     // this.broadcast('UICheckBox', 'a', 'qq')
-    console.log(this.$toast(111, null, 20000))
+    // console.log(this.$toast(111, null, 20000))
   },
   methods: {
     handlea(p){
-      console.log('handlea', p)
+      // console.log('handlea', p)
     }
   }
 

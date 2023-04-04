@@ -1,14 +1,14 @@
 <template>
   <div> 
     hello world
-    <!-- <UICheckBox ref="saa" @a="handlea">
+    <!-- <UICheckBox ref="saa" :aa="'a'" a="q" @a="handlea">
       <div>222</div>
-    </UICheckBox> -->
+    </UICheckBox>  -->
     <!-- <UIDatePicker ref="UIDatePicker">
       时间选择器
     </UIDatePicker> -->
-    <UIScrollbar ref="UIScrollbar">sss</UIScrollbar>
-
+    <!-- <UIScrollbar ref="UIScrollbar">sss</UIScrollbar> -->
+    <UIImage ref="UIImage" />
   </div>
 </template>
 
